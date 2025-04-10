@@ -1,3 +1,4 @@
 Flask
 lyricsgenius
 flask-cors
+BeautifulSoup
