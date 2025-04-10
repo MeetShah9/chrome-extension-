@@ -93,4 +93,10 @@ def get_lyrics():
 
     except Exception as e:
         return jsonify({ "error": str(e) }), 500
+if __name__ == '__main__':
+    # When running in a deployment environment, use the PORT environment variable
+    # and bind to 0.0.0.0 to allow external connections
+    port = int(os.environ.get("PORT", 5000))
+    app.run(host='0.0.0.0', port=port, debug=False)
+
 
