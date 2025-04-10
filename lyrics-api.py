@@ -21,7 +21,7 @@ USER_AGENTS = [
 
 
 # Get Genius token from env or fallback to hardcoded one
-GENIUS_TOKEN = "U26XhBb1rHkRG6ewM-iUtrbiVrk0FqzORlFkVTkmuBu8SaPmQ7NgqmvfU6DhMuu8"
+GENIUS_TOKEN = os.environ.get("GENIUS_TOKEN") 
 
 genius = Genius(GENIUS_TOKEN, remove_section_headers=True)
 
