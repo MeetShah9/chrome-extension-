@@ -1,12 +1,14 @@
-# from flask import Flask, request, jsonify
-# from lyricsgenius import Genius
-# from flask_cors import CORS
-# import os
+from flask import Flask, request, jsonify
+from lyricsgenius import Genius
+from flask_cors import CORS
+import os
+
+import requests
+from bs4 import BeautifulSoup
+
 # # Setup Flask app
 # app = Flask(__name__)
 # CORS(app)
-
-
 
 
 # # Genius token
@@ -48,8 +50,7 @@
 # workourd method:
 
 
-import requests
-from bs4 import BeautifulSoup
+
 app = Flask(__name__)
 CORS(app)
 
