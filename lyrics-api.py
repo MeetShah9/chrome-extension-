@@ -4,6 +4,7 @@ import os
 import requests
 from bs4 import BeautifulSoup
 import random
+from lyricsgenius import Genius
 
 # Setup Flask app
 app = Flask(__name__)
